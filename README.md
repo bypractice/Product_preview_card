@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![https://github.com/bypractice/Product_preview_card/blob/main/screenshot_product_preview.png](./screenshot_product_review.png)
+![Screenshot of app](/screenshot_product_review.png)
 
 ### Links
 
