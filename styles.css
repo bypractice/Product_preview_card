@@ -64,7 +64,7 @@ picture {
     display: flex;
     flex-direction: column;
     padding: clamp(1.4rem, 2vw, 2rem);
-    gap: 1rem;
+
 }
 
 h1 {
@@ -157,7 +157,7 @@ h1 {
 
     picture {
         width: 50%;
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 2 / 3;
     }
 
     .hero {
