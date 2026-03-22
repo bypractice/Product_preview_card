@@ -62,7 +62,8 @@ picture {
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: clamp(1.4rem, 2vw, 2rem);
+    gap: 1rem;
 }
 
 h1 {
@@ -79,11 +80,13 @@ h1 {
     text-align: left;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: .2em;
+    letter-spacing: .25em;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .description {
+    font-size: clamp(.875rem, 0.82rem + .2vw, 1rem);
     display: block;
     width: 100%;
     line-height: 1.5;
@@ -100,7 +103,7 @@ h1 {
 }
 
 .price_main {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--Green_500);
     font-family: 'Fraunces', serif;
 }
@@ -118,6 +121,8 @@ h1 {
     font: inherit;
     font-weight: 700;
     cursor: pointer;
+    gap: 0.8rem;
+    min-height: 3rem;
 }
 
 .cart-link:hover {
@@ -135,7 +140,7 @@ h1 {
 }
 
 .cart-link img {
-    margin-right: 1rem;
+    margin-right: 0;
 }
 
 @media (min-width: 55rem) {
