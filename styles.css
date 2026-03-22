@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500 700;
+    src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    src: url('./Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --Green_500: hsl(158, 36%, 37%);
+    --Green_700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: clamp(1rem, 3vw, 2rem;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: clamp(22rem, 90vw, 38rem);
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    color: var(--Grey);
+}
+
+picture {
+    display: block;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 1.6rem + 1vw, 2.3rem);
+    color: var(--Black);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.category {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2em;
+    margin-bottom: 1rem;
+}
+
+.description {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.price_main {
+    font-size: 1.5rem;
+    color: var(--Green_500);
+    font-family: 'Fraunces', serif;
+}
+
+.cart-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    border-radius: .5rem;
+    color: white;
+    background-color: var(--Green_500);
+    padding: 1rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cart-link:hover {
+    background-color: var( --Green_700);
+}
+
+.cart-link:focus-visible {
+    outline: 1px solid var(--Green_500);
+    outline-offset: 1px;
+}
+
+.cart-link:focus {
+    outline: 1px solid var(--Green_500);
+    outline-offset: 1px;
+}
+
+.cart-link img {
+    margin-right: 1rem;
+}
+
+@media (min-width: 55rem) {
+    .card-container {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    picture,
+    .content-wrapper {
+        width: 50%;
+    }
+
+    .hero {
+        height: 100%;
+        object-fit: cover;
+    }
+}
