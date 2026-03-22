@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot_product_review.png)
+![https://github.com/bypractice/Product_preview_card/blob/main/screenshot_product_preview.png](./screenshot_product_review.png)
 
 ### Links
 
