@@ -51,6 +51,7 @@ body {
 
 picture {
     display: block;
+    aspect-ratio: 3 / 2;
 }
 
 .hero {
@@ -96,14 +97,14 @@ h1 {
 
 .price {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 1rem;
     width: 100%;
     margin-bottom: 1rem;
 }
 
 .price_main {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--Green_500);
     font-family: 'Fraunces', serif;
 }
@@ -152,6 +153,10 @@ h1 {
     picture,
     .content-wrapper {
         width: 50%;
+    }
+
+    picture {
+        aspect-ratio: auto;
     }
 
     .hero {
