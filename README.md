@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of app](/screenshot_product_review.png)
+![Screenshot of app](/screenshot_product_preview.png)
 
 ### Links
 
